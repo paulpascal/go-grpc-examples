@@ -5,14 +5,15 @@ import (
 	"log"
 	"net"
 
-	"github.com/itsksaurabh/udemy/grpc/unary/greet/greetpb"
+	"go-grpc-examples/unary/greet/greetpb"
+
 	"google.golang.org/grpc"
 )
 
 type server struct{}
 
 func main() {
-	lis, err := net.Listen("tcp", "0.0.0.0:50051")
+	lis, err := net.Listen("tcp", "0.0.0.0:8080")
 	if err != nil {
 		log.Fatalf("Failed to listen %v", err)
 	}

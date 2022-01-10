@@ -1,7 +1,6 @@
-
 # go-gRPC-examples
 
-<img style="float: right;" width="200" src="./assets/logo.png"> 
+<img style="float: right;" width="200" src="./assets/logo.png">
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/itsksaurabh/go-grpc-examples)](https://goreportcard.com/report/github.com/itsksaurabh/go-grpc-examples)
 [![MIT License](https://img.shields.io/github/license/itsksaurabh/go-grpc-examples?style=social)](./LICENSE)
@@ -10,7 +9,7 @@ This repo contains examples and implementations of different types of GRPC servi
 
 # What is GRPC ?
 
-[gRPC](https://grpc.io/docs/) ( gRPC Remote Procedure Calls ) is an open source remote procedure call ( RPC ) system initially developed at Google in 2015. 
+[gRPC](https://grpc.io/docs/) ( gRPC Remote Procedure Calls ) is an open source remote procedure call ( RPC ) system initially developed at Google in 2015.
 It uses HTTP/2 for transport, Protocol Buffers as the interface description language, and provides features such as authentication, bidirectional streaming and flow control, blocking or nonblocking bindings, and cancellation and timeouts.
 It generates cross-platform client and server bindings for many languages. Most common usage scenarios include connecting services in microservices style architecture and connect mobile devices, browser clients to backend services.
 
@@ -54,3 +53,7 @@ Check examples : [Bidirectional streaming](./stream/bi-directional-streaming/)
 ## License
 
 [MIT](LICENSE) © Kumar Saurabh
+
+# Generating protob for dart
+
+protoc --dart_out=grpc:greetpb -Igreetpb greetpb\greet.proto

@@ -5,14 +5,14 @@ import (
 	"log"
 	"net"
 
-	"github.com/itsksaurabh/udemy/grpc/unary/sum/sumpb"
+	"go-grpc-examples/unary/sum/sumpb"
 	"google.golang.org/grpc"
 )
 
 type server struct{}
 
 func main() {
-	lis, err := net.Listen("tcp", "localhost:50051")
+	lis, err := net.Listen("tcp", "localhost:8080")
 	if err != nil {
 		log.Fatalf("failed to liesten: %v", err)
 	}

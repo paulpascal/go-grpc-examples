@@ -6,8 +6,6 @@ import (
 	"log"
 	"time"
 
-	"github.com/itsksaurabh/udemy/grpc/stream/client-streaming/sumAll/sumAllpb"
-
 	"google.golang.org/grpc"
 )
 
